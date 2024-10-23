@@ -486,19 +486,16 @@ footer {
         width: 100%;
     }
 
-    /* .workout-programs {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-        padding: 20px;
-    } */
-
     footer {
         padding: 20px;
     }
 
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .program-card {
+        margin: auto;
     }
 
 }
