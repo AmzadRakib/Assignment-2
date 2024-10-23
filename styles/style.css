@@ -314,7 +314,6 @@ th {
 /* Footer styles  */
 
 footer {
-    color: wheat;
     margin-top: 100px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -371,7 +370,7 @@ footer {
 }
 
 .all-rights {
-    margin-bottom: 35px;
+    padding-bottom: 35px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.4rem;
@@ -454,6 +453,14 @@ footer {
     .form-group select {
         padding: 20px;
         width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
