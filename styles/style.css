@@ -267,7 +267,7 @@ table {
 
 td,
 th {
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 18px 15px 15px 10px;
 
 
@@ -309,6 +309,36 @@ th {
 #btn-margin {
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+/* Extra Section Style  */
+.extra {
+    max-width: 1060px;
+    margin: 80px auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.workout-programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.program-card {
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
 }
 
 /* Footer styles  */
@@ -420,7 +450,8 @@ footer {
         margin-top: 0px;
     }
 
-    .habit-cards {
+    .habit-cards,
+    .workout-programs {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 20px;
@@ -454,6 +485,13 @@ footer {
         padding: 20px;
         width: 100%;
     }
+
+    /* .workout-programs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 20px;
+    } */
 
     footer {
         padding: 20px;
