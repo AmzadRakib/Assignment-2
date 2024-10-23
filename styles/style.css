@@ -12,6 +12,11 @@ body {
     background-color: black;
 }
 
+
+.display-hide {
+    display: none;
+}
+
 /* Shared Styles  */
 .opacity-color {
     color: rgba(255, 255, 255, 0.5);
@@ -153,4 +158,47 @@ body {
 
 .badge-description {
     color: rgba(239, 237, 232, 0.65);
+}
+
+
+
+
+
+
+/* Media Query  */
+
+/* small device  */
+
+@media screen and (max-width: 576px) {
+    .nav-items {
+        display: none;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        margin-top: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 32px;
+    }
+
+    .btn-banner {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 32px;
+    }
 }
