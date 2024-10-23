@@ -18,8 +18,17 @@ body {
 }
 
 /* Shared Styles  */
+.section-title {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 .opacity-color {
     color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
 }
 
 .btn-primary {
@@ -41,7 +50,6 @@ body {
 }
 
 /* navbar styles  */
-
 .navbar {
     margin-top: 50px;
     display: flex;
@@ -78,6 +86,19 @@ body {
     background: rgb(230, 83, 60);
 }
 
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-icon .line {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+}
+
 /* Banner styles */
 
 .banner {
@@ -94,9 +115,6 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
-
-
 
 .btn-banner {
     color: rgb(255, 255, 255);
@@ -137,7 +155,6 @@ body {
     gap: 10px;
     position: absolute;
     bottom: 100px;
-
 }
 
 .red-circle {
@@ -145,7 +162,6 @@ body {
     height: 40px;
     background-color: #ff4a42;
     border-radius: 50%;
-
 }
 
 .badge-title {
@@ -153,33 +169,161 @@ body {
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 5px;
-
 }
 
 .badge-description {
     color: rgba(239, 237, 232, 0.65);
 }
 
+/* main styles  */
+.main-width {
+    max-width: 1060px;
+    margin: 50px auto;
+}
+
+main>section {
+    margin-top: 100px;
+}
+
+/* change your habits styles  */
+.habits {
+    text-align: center;
+}
+
+.habit-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+}
+
+.habit-card-img {
+    border-radius: 50%;
+}
+
+.habit-card-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+/* Run Extra miles Styles  */
+.run {
+    display: flex;
+    gap: 100px;
+    padding: 30px 30px 30px 55px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    position: relative;
+}
+
+.run-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.run-img img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* Calculator Section styles  */
+.calculator-headline {
+    width: 671px;
+    margin: 80px auto;
+}
+
+.calculator {
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+}
+
+.calculator-container {
+    width: 1060px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.calculator-table {
+    padding-top: 52px;
+}
+
+.table-title {
+
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+table {
+    margin-top: 52px;
+    width: 310px;
+    height: 216px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 18px 15px 15px 10px;
 
 
+}
 
+td {
+    color: rgba(255, 255, 255, 0.5);
+}
 
+th {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.calculator-form {
+    padding-top: 52px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select {
+    color: rgba(255, 255, 255, 0.6);
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group input:last-child,
+.form-group select:last-child {
+    margin-right: 0;
+}
 
 /* Media Query  */
 
 /* small device  */
-
 @media screen and (max-width: 576px) {
-    .nav-items {
-        display: none;
-    }
-
     .header {
         padding: 20px;
     }
 
     .navbar {
         margin-top: 0;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
     }
 
     .banner {
@@ -191,14 +335,54 @@ body {
     }
 
     .btn-primary {
-        padding: 10px 20px;
+        padding: 15px 20px;
         font-size: 1rem;
         border-radius: 32px;
     }
 
     .btn-banner {
-        padding: 10px 20px;
+        padding: 15px 20px;
         font-size: 1rem;
         border-radius: 32px;
     }
+
+    main>section {
+        margin-top: 0px;
+    }
+
+    .habit-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .run {
+        padding: 30px 30px 30px 30px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .run-info {
+        gap: 0px;
+    }
+
+    .calculator-container {
+        width: 80%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .calculator-headline {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 20px;
+        width: 100%;
+    }
+
 }
