@@ -306,6 +306,77 @@ th {
     margin-right: 0;
 }
 
+#btn-margin {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Footer styles  */
+
+footer {
+    color: wheat;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.info-title {
+    color: rgb(230, 83, 60);
+    font-size: 4.3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer-middle-part,
+.footer-last-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav>li {
+    list-style: none;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.hr-line {
+    max-width: 1060px;
+    margin: 40px auto;
+}
+
+.all-rights {
+    margin-bottom: 35px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+}
+
 /* Media Query  */
 
 /* small device  */
